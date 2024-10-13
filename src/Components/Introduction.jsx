@@ -3,6 +3,7 @@ import Lottie from "react-lottie"; // Make sure you have imported the Lottie com
 import { motion } from "framer-motion"; // For motion animation
 import animationData from "../Animations/animation.json";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
+
 const Introduction = () => {
   const defaultOptions = {
     loop: true,
@@ -20,16 +21,29 @@ const Introduction = () => {
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-3 py-12">
         {/* Left Side: Text */}
-        <div className="w-full md:w-1/2 text-left space-y-4">
+        <div className="w-full md:w-1/2 text-left space-y-4 relative mt-24">
           <h1 className="text-7xl font-bold">Hi there!</h1>
-          <h2 className="text-7xl font-bold ">I am</h2>
-          <h3 className="text-7xl font-bold bg-gradient-to-r from-rose-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-            Rohit Manohar
-          </h3>
-          <p className="text-xl">
-            I am a Computer Science student passionate about software
-            development, web technologies, and problem-solving. Currently
-            seeking opportunities to apply my skills in real-world projects.
+          <h2 className="text-7xl font-bold">I am</h2>
+          <div className="flex items-center justify-between">
+            <h3 className="text-7xl font-bold bg-gradient-to-r from-rose-500 via-blue-500 to-purple-500 bg-clip-text text-transparent ">
+              Rohit Manohar
+            </h3>
+            {/* Let's Connect Button - Moved to Right */}
+            <button className="absolute right-0 h-36 w-36 rounded-full flex flex-col items-center justify-center -mx-16 mb-52 border-2 border-sky-400 text-xl font-semibold bg-white bg-clip-text text-transparent">
+              <a
+                href="https://www.linkedin.com/in/rohit-manohar-80b949207/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center"
+              >
+                <ArrowTopRightOnSquareIcon className="w-6 h-6 mb-2 text-white" />
+                Let's <br /> Connect
+              </a>
+            </button>
+          </div>
+
+          <p className="text-xl text-gray-400">
+            I am a Computer Science student passionate about software development, web technologies, and problem-solving. Currently seeking opportunities to apply my skills in real-world projects.
           </p>
 
           <button className="px-5 py-2 flex items-center space-x-2 hover:bg-pink-800/65 text-xl font-semibold rounded-md">
@@ -46,7 +60,7 @@ const Introduction = () => {
         </div>
 
         {/* Right Side: Lottie Animation */}
-        <motion.div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0 -mx-24">
+        <motion.div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0 -mx-24 cursor-none">
           <Lottie options={defaultOptions} height={700} width={700} />
         </motion.div>
       </div>
@@ -55,3 +69,4 @@ const Introduction = () => {
 };
 
 export default Introduction;
+
