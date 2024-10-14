@@ -16,7 +16,8 @@ const Introduction = () => {
   // College logo URL
   const collegeLogoUrl =
     "https://parthmittal.netlify.app/assets/nitk.5583c896.png";
-  const clgLogo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST1yUAOqpOpI0oog2XFKh6Nesraz-iqXtIuw&s";
+  const clgLogo =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST1yUAOqpOpI0oog2XFKh6Nesraz-iqXtIuw&s";
 
   return (
     <section
@@ -57,11 +58,9 @@ const Introduction = () => {
           />
           <div>
             <p className="text-2xl font-bold  bg-gradient-to-r from-rose-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-            Dharampeth M.P. Deo Memorial Science College, Nagpur
+              Dharampeth M.P. Deo Memorial Science College, Nagpur
             </p>
-            <p className="text-lg">
-              Secondary Education
-            </p>
+            <p className="text-lg">Secondary Education</p>
             <p className="text-lg text-gray-400">2020 - 2022</p>
           </div>
         </div>

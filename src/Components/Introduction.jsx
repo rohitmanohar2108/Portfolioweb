@@ -29,7 +29,7 @@ const Introduction = () => {
               Rohit Manohar
             </h3>
             {/* Let's Connect Button - Moved to Right */}
-            <button className="absolute right-0 h-36 w-36 rounded-full flex flex-col items-center justify-center -mx-16 mb-52 border-2 border-sky-400 text-xl font-semibold bg-white bg-clip-text text-transparent">
+            <button className="absolute right-0 h-36 w-36 rounded-full flex flex-col items-center justify-center -mx-16 mb-52 border-2 border-sky-400 text-xl font-semibold bg-white  bg-clip-text text-transparent">
               <a
                 href="https://www.linkedin.com/in/rohit-manohar-80b949207/"
                 target="_blank"
