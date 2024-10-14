@@ -4,7 +4,7 @@ const Certifications = () => {
   return (
     <section
       id="certifications"
-      className="min-h-screen bg-[url('https://images.unsplash.com/photo-1618224619763-c26996a38420?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center p-8 text-white"
+      className="min-h-screen bg-black"
     >
       <h2 className="text-4xl font-bold mb-6">Certifications</h2>
       <ul className="list-disc ml-5">

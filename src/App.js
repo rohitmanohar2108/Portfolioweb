@@ -9,9 +9,9 @@ import Introduction from "./Components/Introduction";
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans bg-gradient-to-r from-black via-blue-900 to-black min-h-screen">
       <Header />
-      <main className="">
+      <main>
         <Introduction />
         <Skills />
         <Education />

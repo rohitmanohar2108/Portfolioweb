@@ -10,7 +10,7 @@ const Header = () => {
           <Link
             to="skills"
             smooth={true}
-            duration={500}
+            duration={100}
             className="cursor-pointer px-4 py-2 rounded-lg   hover:bg-white/30  transition-all duration-300 ease-in-out"
           >
             Skills & Experiance

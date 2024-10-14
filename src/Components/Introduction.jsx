@@ -17,7 +17,7 @@ const Introduction = () => {
   return (
     <section
       id="introduction"
-      className="min-h-screen bg-black bg-gradient-to-l from-blue-500/20"
+      className="min-h-screen bg-black"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-3 py-12">
         {/* Left Side: Text */}

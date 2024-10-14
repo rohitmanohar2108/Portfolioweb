@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen bg-black flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-blue-500/20"
+      className="min-h-screen bg-black flex flex-col md:flex-row items-center justify-between "
     >
       {/* Skills Timelines on the Left */}
       <div className="w-full md:w-1/2 text-white p-5 flex flex-col items-center">

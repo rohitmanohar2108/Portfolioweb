@@ -1,161 +1,149 @@
-import React, { useState, useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useState } from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { SiReact, SiNodedotjs, SiJavascript, SiTailwindcss, SiHtml5, SiCss3, SiJquery} from 'react-icons/si';
+import { AiOutlineOpenAI } from "react-icons/ai";
+import { FcElectronics } from "react-icons/fc";
+import { GrMysql } from "react-icons/gr";
 
-gsap.registerPlugin(ScrollTrigger);
-
-const projects = {
-  All: [
-    {
-      id: 1,
-      image: "https://do6gp1uxl3luu.cloudfront.net/projects/netflixProject.png",
-      title: "Film Ninja",
-      description: "Web Dev",
-      link: "#",
-    },
-    {
-      id: 2,
-      image:
-        "https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_33ipk61D9T6AhM1YK67rmpvPzvjG%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_J7U1tK6HyWhqP85jf6hbzXqbCUyS",
-      title: "Portfolio",
-      description: "Web Design",
-      link: "https://ro-portfolio-olive.vercel.app/",
-    },
-    {
-      id: 4,
-      image:
-        "https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_6aZ9wP5gZaNDPNPYKNzpWWvDojWM%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_J7U1tK6HyWhqP85jf6hbzXqbCUyS",
-      title: "Personal Portfolio",
-      description: "Web Dev",
-      link: "https://personal-portfolio-kappa-teal.vercel.app/",
-    },
-  ],
-  "Web Development": [
-    {
-      id: 1,
-      image: "https://do6gp1uxl3luu.cloudfront.net/projects/netflixProject.png",
-      title: "Film Ninja",
-      description: "Web Dev",
-      link: "#",
-    },
-  ],
-  "Web Design": [
-    {
-      id: 1,
-      image:
-        "https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_33ipk61D9T6AhM1YK67rmpvPzvjG%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_J7U1tK6HyWhqP85jf6hbzXqbCUyS",
-      title: "Portfolio",
-      description: "Web Design",
-      link: "https://ro-portfolio-olive.vercel.app/",
-    },
-    {
-      id: 2,
-      image:
-        "https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_6aZ9wP5gZaNDPNPYKNzpWWvDojWM%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_J7U1tK6HyWhqP85jf6hbzXqbCUyS",
-      title: "Personal Portfolio",
-      description: "Web Design",
-      link: "https://personal-portfolio-kappa-teal.vercel.app/",
-    },
-  ],
-};
+const projectsData = [
+  {
+    id: 1,
+    name: 'Film Ninja',
+    image: 'https://do6gp1uxl3luu.cloudfront.net/projects/netflixProject.png',
+    techStack: [
+      { name: 'React', icon: <SiReact className="inline w-5 h-5 text-white" /> },
+      { name: 'JavaScript', icon: <SiJavascript className="inline w-5 h-5 text-white" /> },
+      { name: 'Tailwindcss', icon: <SiTailwindcss className="inline w-5 h-5 text-white" /> },
+      { name: 'OpenAi', icon: <AiOutlineOpenAI className="inline w-5 h-5 text-white" /> },
+      
+    ],
+    description: 'Built a responsive movie browsing app with real-time data and smart suggestions, featuring optimized search and secure user authentication.',
+    githubLink: 'https://github.com/user/project-one',
+  },
+  {
+    id: 2,
+    name: 'Operating System Simulator',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIaYf8IsbR8uD-69yYhlNmLHl4FeENpJhHlA&s',
+    techStack: [
+      { name: 'HTML5', icon: <SiHtml5 className="inline w-5 h-5 text-white" /> },
+      { name: 'CSS3', icon: <SiCss3 className="inline w-5 h-5 text-white" /> },
+      { name: 'NodeJS', icon: <SiNodedotjs className="inline w-5 h-5 text-white" /> },
+      { name: 'JQuery', icon: <SiJquery className="inline w-5 h-5 text-white" /> },
+    ],
+    description: 'Developed a web app to simulate and visualize FIFO, LRU, and Optimal page replacement algorithms, enhancing understanding of memory management and system performance optimization.',
+    githubLink: 'https://github.com/user/project-two',
+  },
+  {
+    id: 3,
+    name: 'Airlines Reservation System',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4niMvPT8O32HP7DBPtM1SFndUKi3ZZumyKA&s',
+    techStack: [
+      { name: 'React', icon: <SiReact className="inline w-5 h-5 text-white" /> },
+      { name: 'JavaScript', icon: <SiJavascript className="inline w-5 h-5 text-white" /> },
+      { name: 'MySql', icon: <GrMysql className="inline w-5 h-5 text-white" /> },
+    ],
+    description: 'Effective airline management relies on online booking systems to enhance customer experience, streamline operations, and boost profitability. These systems improve reservations, reduce errors, and provide valuable data for tailored services and marketing.',
+    githubLink: 'https://github.com/user/project-three',
+  },
+  {
+    id: 4,
+    name: 'The Chess Clock',
+    image: 'https://media.istockphoto.com/id/1127280074/vector/chess-clock-vector-icon-filled-flat-sign-for-mobile-concept-and-web-design-chess-stopwatch.jpg?s=612x612&w=0&k=20&c=LufQPq0W7VBw8OA92ZtodE27E4Jg9LpSPzJ03jXY1Wo=',
+    techStack: [
+      { name: 'Digital Electronic', icon: <FcElectronics className="inline w-5 h-5 text-white" /> },
+      
+    ],
+    description: 'Created a digital chess clock system with a user-friendly LCD interface and customizable time settings. It supports dual-clock mode for tournaments and includes audio cues for accessibility, enhancing the overall chess experience.',
+    githubLink: 'https://github.com/user/project-three',
+  },
+  {
+    id: 5,
+    name: 'PortfolioWeb',
+    image: 'https://parthmittal.netlify.app/assets/portfolio.a3d12760.jpg',
+    techStack: [
+      { name: 'React', icon: <SiReact className="inline w-5 h-5 text-white" /> },
+      { name: 'JavaScript', icon: <SiJavascript className="inline w-5 h-5 text-white" /> },
+      { name: 'Tailwindcss', icon: <SiTailwindcss className="inline w-5 h-5 text-white" /> },
+    ],
+    description: 'Created an interactive portfolio website that highlights skills and projects with modern design and animations. Included a contact form and social media links to facilitate user engagement and connections.',
+    githubLink: 'https://github.com/user/project-three',
+  },
+];
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState("All");
-  const boxRef = useRef(null);
+  const [tooltip, setTooltip] = useState({ visible: false, content: '' });
 
-  // GSAP animations
-  useEffect(() => {
-    gsap.fromTo(
-      ".project-card",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1, delay: 0.5, stagger: 0.2 }
-    );
-  }, [activeTab]);
+  const handleMouseEnter = (name) => {
+    setTooltip({ visible: true, content: name });
+  };
 
-  useEffect(() => {
-    const box = boxRef.current;
-
-    // Animation using GSAP with ScrollTrigger
-    gsap.fromTo(
-      box,
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: box,
-          start: "top 80%",
-          end: "top 50%",
-          toggleActions: "play none none reverse",
-        },
-      }
-    );
-  }, []);
+  const handleMouseLeave = () => {
+    setTooltip({ visible: false, content: '' });
+  };
+  
 
   return (
-    <section
-      id="projects"
-      className="min-h-screen bg-[url('https://images.unsplash.com/photo-1628771791803-7ee290de9893?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center p-8 text-white"
-    >
-      <h2 className="text-4xl font-bold mb-6">Projects</h2>
-
-      {/* Tab buttons */}
-      <div className="flex space-x-4 mb-8">
-        <button
-          onClick={() => setActiveTab("All")}
-          className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white ${
-            activeTab === "All" ? "text-sky-400" : "text-white"
-          }  transition duration-300 ease-in-out`}
-        >
-          All
-        </button>
-        <button
-          onClick={() => setActiveTab("Web Development")}
-          className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white ${
-            activeTab === "Web Development" ? "text-sky-400" : "text-gray-300"
-          } transition duration-300 ease-in-out`}
-        >
-          Web Development
-        </button>
-        <button
-          onClick={() => setActiveTab("Web Design")}
-          className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white ${
-            activeTab === "Web Design" ? "text-sky-400" : "text-gray-300"
-          }  transition duration-300 ease-in-out`}
-        >
-          Web Design
-        </button>
-      </div>
-
-      {/* Project cards */}
-      <div
-        ref={boxRef}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-gray-300 h-full p-5"
+    <section id="projects" className="min-h-screen bg-black p-5">
+    <h2 className="text-4xl font-bold text-white mb-8">Projects</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projectsData.map((project) => (
+        <div
+        key={project.id}
+        
+        className={
+          "border hover:bg-gradient-to-br from-white/20 to-blue-500/20 hover:border-transparent rounded-lg shadow-lg p-5 py-9 flex flex-col items-center transition-colors duration-200 ease-in-out"
+        }
       >
-        {projects[activeTab].map((project) => (
-          <a
-            key={project.id}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative block bg-purple-800/50 rounded-sm overflow-hidden group project-card"
-          >
+          {/* Circular Image on the Top */}
+          <div className="flex-shrink-0">
             <img
               src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover"
+              alt={project.name}
+              className="w-32 h-32 object-cover rounded-full border-4 border-white mb-4"
             />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 border hover:border-white">
-              <h3 className="font-bold mb-2 text-3xl bg-gradient-to-r from-violet-500  via-red-600 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
-                {project.title}
-              </h3>
-              <p className="font-bold">{project.description}</p>
+          </div>
+  
+          {/* Project Details */}
+          <div className="text-center">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-rose-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">{project.name}</h3>
+            <div className="flex justify-center space-x-6 my-4">
+              {project.techStack.map((tech, index) => (
+                <div
+                  key={index}
+                  className="relative flex flex-col items-center"
+                  onMouseEnter={() => handleMouseEnter(tech.name)}
+                    onMouseLeave={handleMouseLeave}
+                >
+                  {tech.icon} {/* Render the icon */}
+                  {tooltip.visible && tooltip.content === tech.name && (
+                      <span className="absolute top-full mt-1 text-xs text-white bg-black p-1 rounded">
+                        {tooltip.content} {/* Tooltip text */}
+                      </span>
+                    )}
+                </div>
+              ))}
             </div>
-          </a>
-        ))}
-      </div>
-    </section>
+  
+            {/* Description */}
+            <p className="text-gray-300 mb-4 mt-3 px-3">
+              {project.description}
+            </p>
+  
+            {/* GitHub Link */}
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700 transition duration-200"
+            >
+              <FaGithub className="mr-1" /> GitHub
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+  
   );
 };
 
