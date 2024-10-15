@@ -15,7 +15,7 @@ const certificationsData = [
   {
     id: 2,
     name: 'Namaste React - Frontend Dev',
-    provider: 'Udemy',
+    provider: 'NamasteDev.com',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFRgH9vFOhRNOlLiUk9f62bj9rwinBzr63fA&s',
     link: 'https://media.licdn.com/dms/image/v2/D562DAQGBRip9wMxEyQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1720373809961?e=1729598400&v=beta&t=zzy0W4i1nhfmtTF3NZvSDrzNA0aEKumLrbwvbF7SCaA',
   },
