@@ -9,15 +9,16 @@ import Introduction from "./Components/Introduction";
 
 function App() {
   return (
-    <div className="font-sans bg-gradient-to-r from-black via-blue-900 to-black min-h-screen">
+    <div className="">
       <Header />
       <main>
         <Introduction />
         <Skills />
         <Education />
         <Projects />
-        <Contact />
         <Certifications />
+        <Contact />
+        
       </main>
     </div>
   );

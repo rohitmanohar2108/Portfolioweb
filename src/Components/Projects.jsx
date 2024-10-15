@@ -143,6 +143,7 @@ const Projects = () => {
                     onMouseEnter={() => handleMouseEnter(tech.name)}
                     onMouseLeave={handleMouseLeave}
                   >
+                  
                     {tech.icon} {/* Render the icon */}
                     {tooltip.visible && tooltip.content === tech.name && (
                       <span className="absolute top-full mt-1 text-xs text-white border border-zinc-500 bg-zinc-800 p-1 rounded">

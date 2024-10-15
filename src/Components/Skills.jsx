@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 import {
   FaReact,
   FaNodeJs,
@@ -38,7 +38,7 @@ const Skills = () => {
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // Cleanup ScrollTrigger instances on component unmount
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill()); // Cleanup ScrollTrigger instances on component unmount
     };
   }, []);
 
@@ -54,12 +54,16 @@ const Skills = () => {
       id="skills"
       className="min-h-screen bg-black flex flex-col md:flex-row items-center justify-between "
     >
+      <div className="absolute bg-blue-900 bg-opacity-20 rounded-full h-[80%] w-[60%] blur-3xl ml-[40%] mb-20"></div>
       {/* Skills Timelines on the Left */}
       <div className="w-full md:w-1/2 text-white p-5 flex flex-col items-center">
         <h2 className="text-6xl font-bold mb-10">Skills & Experience</h2>
 
         {/* Programming Languages Timeline */}
-        <div className="relative border-l-2 border-white pl-10 mr-28 mb-16" ref={addToRefs}>
+        <div
+          className="relative border-l-2 border-white pl-10 mr-28 mb-16"
+          ref={addToRefs}
+        >
           <h3 className="text-2xl font-semibold mb-4 bg-gradient-to-r from-rose-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
             Programming Languages
           </h3>
@@ -68,7 +72,7 @@ const Skills = () => {
           <div className="grid grid-cols-3 gap-6 ml mb-10 relative">
             <div className="flex flex-col items-center">
               <FaJsSquare size={40} className="text-yellow-500" />
-              <span className='text-sm'>JavaScript</span>
+              <span className="text-sm">JavaScript</span>
             </div>
             <div className="flex flex-col items-center">
               <SiC size={40} className="text-blue-300" />
@@ -113,7 +117,10 @@ const Skills = () => {
         </div>
 
         {/* Tools Timeline */}
-        <div className="relative border-l-2 border-white pl-10 mr-56 mb-16" ref={addToRefs}>
+        <div
+          className="relative border-l-2 border-white pl-10 mr-56 mb-16"
+          ref={addToRefs}
+        >
           <h3 className="text-2xl font-semibold mb-4 bg-gradient-to-r from-rose-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
             Tools
           </h3>
@@ -132,7 +139,6 @@ const Skills = () => {
       <div className="w-full md:w-1/2 text-white p-5 flex flex-col items-center mb-[25%]">
         {/* Title */}
 
-
         {/* Experience 1 */}
         <div className="relative pl-10 mb-16" ref={addToRefs}>
           {/* Vertical Line */}
@@ -149,14 +155,17 @@ const Skills = () => {
             <div className="text-sm text-gray-400">Dec 2022 - Present</div>
             <ul className="list-disc list-inside mt-2 text-lg text-gray-300 mr-3 ">
               <li>
-                Designed posters and promotional materials for TEDx events, enhancing <span className="ml-6">visual communication and branding efforts.</span> 
+                Designed posters and promotional materials for TEDx events,
+                enhancing{" "}
+                <span className="ml-6">
+                  visual communication and branding efforts.
+                </span>
               </li>
               <li>
-                Collaborated on media campaigns to boost event visibility and <span className="ml-6">engagement.</span>
+                Collaborated on media campaigns to boost event visibility and{" "}
+                <span className="ml-6">engagement.</span>
               </li>
-              <li>
-                Technologies Used: Canva, Illustrator
-              </li>
+              <li>Technologies Used: Canva, Illustrator</li>
             </ul>
           </div>
         </div>
