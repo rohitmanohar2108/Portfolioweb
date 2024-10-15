@@ -1,6 +1,6 @@
 <h1 align="center"> Personal Portfolio </h1>
 
-<img width="945" alt="image" src="https://user-images.githubusercontent.com/76661350/193249886-79f3d04a-47c0-4b4b-93a6-23c32cf762f1.png">
+<img width="945" alt="image" src="https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_GS7Wvou5tenSvCuEiqybBpCUjJxM%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_7Cw19NkAnmpKy2okacbv59oWAgAc">
 
 ### Deployed link: https://parthmittal.netlify.app/
 
