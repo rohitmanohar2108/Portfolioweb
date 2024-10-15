@@ -65,27 +65,31 @@ const Certifications = () => {
 
   return (
     <section id="certifications" className="min-h-screen bg-black p-6">
-      <h2 className="text-6xl font-bold text-white mb-16 ml-16 mt-24">Certifications</h2>
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-12 sm:mb-16 ml-4 md:ml-16 mt-16 sm:mt-24">Certifications</h2>
+      
+      {/* Responsive grid layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {certificationsData.map((certification, index) => (
           <div
             key={certification.id}
             ref={el => (boxRefs.current[index] = el)} // Assign each ref to the respective certification box
-            className="border border-gray-500 hover:bg-gradient-to-br from-white/20 to-blue-500/20 hover:border-transparent rounded-lg shadow-lg p-5 flex flex-col items-center transition-colors duration-200 ease-in-out"
+            className="border border-gray-500 hover:bg-gradient-to-br from-white/20 to-blue-500/20 hover:border-transparent rounded-lg shadow-lg p-4 sm:p-5 flex flex-col items-center transition-colors duration-200 ease-in-out"
           >
             {/* Circular Image on the Top */}
             <div className="flex-shrink-0 mb-4">
               <img
                 src={certification.image}
                 alt={certification.provider}
-                className="w-24 h-24 object-cover rounded-full border-4 border-white"
+                className="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-full border-4 border-white"
               />
             </div>
 
             {/* Certification Details */}
             <div className="text-center">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-rose-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">{certification.name}</h3>
-              <p className="text-gray-300 mb-4 mt-3">{certification.provider}</p>
+              <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-rose-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                {certification.name}
+              </h3>
+              <p className="text-gray-300 mb-2 sm:mb-4 mt-2 sm:mt-3">{certification.provider}</p>
 
               {/* Certification Link */}
               <a
@@ -95,7 +99,7 @@ const Certifications = () => {
                 className="bg-blue-600 text-white px-3 py-2 rounded flex items-center justify-center hover:bg-blue-700 transition duration-200"
               >
                 View Certificate
-                <ArrowTopRightOnSquareIcon className="ml-2 h-5 w-5" />
+                <ArrowTopRightOnSquareIcon className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </a>
             </div>
           </div>
