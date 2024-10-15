@@ -8,8 +8,7 @@
 
 1. [Tech Stack](#tech-stack-)
 2. [Implemented Sections](#implemented-sections-%EF%B8%8F)
-3. [References & Inspirations](#references--inspirations-)
-4. [Illustrations](#illustrations-%EF%B8%8F)
+
    <br>
 
 ## Tech Stack 🧰
@@ -36,17 +35,3 @@
 - Projects
 - Certification
 - Contact Me
-
-
-
-
-## References & Inspirations 👏
-
-- [JavaScript Mastery](https://youtu.be/_oO4Qi5aVZs)
-- [Developerfolio](https://developerfolio.js.org/)
-- [MasterPortfolio](https://github.com/ashutosh1919/masterPortfolio)
-
-## Illustrations 🖼️
-
-- [Coding Lottie](https://lottiefiles.com/90189-coding) by Yamesh Sai Balaji
-- [Quiz Mode Lottie](https://lottiefiles.com/92377-quiz-mode) by SenecaDan
