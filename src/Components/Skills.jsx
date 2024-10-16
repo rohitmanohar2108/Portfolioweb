@@ -142,10 +142,10 @@ const Skills = () => {
         {/* Experience 1 */}
         <div className="relative pl-10 mb-16" ref={addToRefs}>
           {/* Vertical Line */}
-          <div className="absolute left-5 top-0 h-full border-l-2 border-blue-400"></div>
+          <div className="absolute left-5 top-0 h-full border-l-2 border-white"></div>
 
           {/* Dot */}
-          <div className="absolute w-4 h-4 bg-blue-500 rounded-full left-3 top-1/2 transform -translate-y-24"></div>
+          <div className="absolute w-4 h-4 bg-white rounded-full left-3 top-1/2 transform -translate-y-24"></div>
 
           {/* Content */}
           <div className="ml-4">
