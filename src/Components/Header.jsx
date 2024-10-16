@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Header = () => {
   return (
-    <header className="fixed w-full bg-black text-white shadow-md z-10">
+    <header className="fixed w-full bg-black text-white shadow-md z-10 font-dm-sans">
       <nav className="flex justify-between items-center p-4">
       <div className="text-4xl font-bold ml-20">Rohit Manohar</div>
         <div className="space-x-4 text-base">
@@ -11,7 +11,7 @@ const Header = () => {
             to="skills"
             smooth={true}
             duration={100}
-            className="cursor-pointer px-4 py-2 rounded-lg   hover:bg-white/30   transition-all duration-300 ease-in-out"
+            className="cursor-pointer px-4 py-2 rounded hover:text-black hover:bg-white   transition-all duration-300 ease-in-out"
           >
             Skills & Experiance
           </Link>
@@ -19,7 +19,7 @@ const Header = () => {
             to="education"
             smooth={true}
             duration={500}
-            className="cursor-pointer px-4 py-2 rounded-lg  hover:bg-white/30 transition-all duration-300 ease-in-out"
+            className="cursor-pointer px-4 py-2 rounded hover:text-black  hover:bg-white transition-all duration-300 ease-in-out"
           >
             Education
           </Link>
@@ -27,7 +27,7 @@ const Header = () => {
             to="projects"
             smooth={true}
             duration={500}
-            className="cursor-pointer px-4 py-2 rounded-lg  hover:bg-white/30 transition-all duration-300 ease-in-out"
+            className="cursor-pointer px-4 py-2 rounded hover:text-black  hover:bg-white transition-all duration-300 ease-in-out"
           >
             Projects
           </Link>
@@ -36,7 +36,7 @@ const Header = () => {
             to="certifications"
             smooth={true}
             duration={500}
-            className="cursor-pointer px-4 py-2 rounded-lg  hover:bg-white/30 transition-all duration-300 ease-in-out"
+            className="cursor-pointer px-4 py-2 rounded hover:text-black  hover:bg-white transition-all duration-300 ease-in-out"
           >
             Certifications
           </Link>
@@ -44,7 +44,7 @@ const Header = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="cursor-pointer px-4 py-2 rounded-lg  hover:bg-white/30 transition-all duration-300 ease-in-out"
+            className="cursor-pointer px-4 py-2 rounded hover:text-black  hover:bg-white transition-all duration-300 ease-in-out"
           >
             Contact Me
           </Link>

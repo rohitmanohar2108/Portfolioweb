@@ -17,9 +17,10 @@ const Introduction = () => {
   return (
     <section
       id="introduction"
-      className="min-h-screen bg-black"
+      className="min-h-screen bg-black font-dm-sans"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-3 py-12">
+      <div className="absolute bg-blue-900 bg-opacity-20 rounded-full h-[80%] w-[60%] blur-3xl ml-[10%] mb-20"></div>
         {/* Left Side: Text */}
         <div className="w-full md:w-1/2 text-left space-y-4 relative mt-24">
           <h1 className="text-7xl font-bold text-white">Hi there!</h1>
@@ -46,7 +47,7 @@ const Introduction = () => {
             I am a Computer Science student passionate about software development, web technologies, and problem-solving. Currently seeking opportunities to apply my skills in real-world projects.
           </p>
 
-          <button className="px-3 py-2 flex items-center text-white space-x-2 hover:bg-pink-800/65 hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-pink-800 text-lg font- rounded-sm">
+          <button className="px-3 py-2 flex items-center text-white space-x-2 bg-zinc-800 hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-white text-lg font- rounded-sm">
             <a
               href="/path-to-your-resume.pdf"
               target="_blank"
