@@ -115,6 +115,7 @@ const Projects = () => {
     <section id="projects" className="min-h-screen bg-black p-5 font-dm-sans">
       <h2 className="text-6xl font-bold text-white mb-16 ml-16">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="absolute bg-blue-900 bg-opacity-20 rounded-full h-[80%] w-[60%] blur-3xl ml-[30%] mb-20"></div>
         {projectsData.map((project, index) => (
           <div
             key={project.id}

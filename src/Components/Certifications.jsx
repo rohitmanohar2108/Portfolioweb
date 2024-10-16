@@ -69,6 +69,7 @@ const Certifications = () => {
       
       {/* Responsive grid layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="absolute bg-blue-900 bg-opacity-20 rounded-full h-[80%] w-[60%] blur-3xl mr-[70%] mb-20"></div>
         {certificationsData.map((certification, index) => (
           <div
             key={certification.id}
