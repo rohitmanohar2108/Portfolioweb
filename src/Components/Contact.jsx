@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-[500px] bg-gray-900 text-white flex items-center justify-center px-10"
+      className="min-h-[500px] bg-gray-900 text-white flex items-center justify-center px-10 font-dm-sans"
     >
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left Side: Name, Description, Social Media Links, Button */}

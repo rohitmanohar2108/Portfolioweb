@@ -64,7 +64,7 @@ const Certifications = () => {
   }, []);
 
   return (
-    <section id="certifications" className="min-h-screen bg-black p-6">
+    <section id="certifications" className="min-h-screen bg-black p-6 font-dm-sans">
       <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-12 sm:mb-16 ml-4 md:ml-16 mt-16 sm:mt-24">Certifications</h2>
       
       {/* Responsive grid layout */}

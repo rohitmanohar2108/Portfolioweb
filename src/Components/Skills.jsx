@@ -52,7 +52,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen bg-black flex flex-col md:flex-row items-center justify-between "
+      className="min-h-screen bg-black flex flex-col md:flex-row items-center justify-between font-dm-sans"
     >
       <div className="absolute bg-blue-900 bg-opacity-20 rounded-full h-[80%] w-[60%] blur-3xl ml-[40%] mb-20"></div>
       {/* Skills Timelines on the Left */}

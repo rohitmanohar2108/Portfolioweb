@@ -82,7 +82,7 @@ const Introduction = () => {
   return (
     <section
       id="introduction"
-      className="min-h-screen bg-black flex flex-col md:flex-row items-center justify-center"
+      className="min-h-screen bg-black flex flex-col md:flex-row items-center justify-center font-dm-sans"
     >
       {/* Animation on the left */}
       <motion.div

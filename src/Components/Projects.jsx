@@ -112,7 +112,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="min-h-screen bg-black p-5">
+    <section id="projects" className="min-h-screen bg-black p-5 font-dm-sans">
       <h2 className="text-6xl font-bold text-white mb-16 ml-16">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projectsData.map((project, index) => (
@@ -146,7 +146,7 @@ const Projects = () => {
                   
                     {tech.icon} {/* Render the icon */}
                     {tooltip.visible && tooltip.content === tech.name && (
-                      <span className="absolute top-full mt-1 text-xs text-white border border-zinc-500 bg-zinc-800 p-1 rounded">
+                      <span className="absolute top-full mt-1 text-xs text-white border border-zinc-500 bg-black px-2 py-1 rounded">
                         {tooltip.content} {/* Tooltip text */}
                       </span>
                     )}
