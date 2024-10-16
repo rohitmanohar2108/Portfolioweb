@@ -46,7 +46,7 @@ const Introduction = () => {
             I am a Computer Science student passionate about software development, web technologies, and problem-solving. Currently seeking opportunities to apply my skills in real-world projects.
           </p>
 
-          <button className="px-5 py-2 flex items-center text-white space-x-2 hover:bg-pink-800/65 text-xl font-semibold rounded-md">
+          <button className="px-3 py-2 flex items-center text-white space-x-2 hover:bg-pink-800/65 hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-pink-800 text-lg font- rounded-sm">
             <a
               href="/path-to-your-resume.pdf"
               target="_blank"

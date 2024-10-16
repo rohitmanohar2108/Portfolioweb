@@ -71,7 +71,7 @@ const Contact = () => {
             href="https://github.com/rohitmanohar2108/Portfolioweb"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center bg-yellow-500 text-gray-900 w-32  px-6 py-3 rounded-full hover:bg-yellow-400 transition duration-200"
+            className="mt-4 inline-flex items-center bg-yellow-500  text-gray-900 w-32  px-6 py-3 rounded-full hover:bg-yellow-400  hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-white transition duration-200"
           >
             <FaStar className="mr-2 h-5 w-5" />
             Star
