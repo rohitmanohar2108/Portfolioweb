@@ -52,7 +52,7 @@ const Introduction = () => {
             seeking opportunities to apply my skills in real-world projects.
           </p>
 
-          <button className="px-3 py-2 flex items-center text-white space-x-2 bg-zinc-800 hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-white text-lg  rounded">
+          <button className="px-3 py-2 flex items-center text-black space-x-2 bg-white hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-white text-lg  rounded">
             <a
               href="/path-to-your-resume.pdf"
               target="_blank"
