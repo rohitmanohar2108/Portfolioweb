@@ -11,7 +11,7 @@ const Header = () => {
             to="skills"
             smooth={true}
             duration={100}
-            className="cursor-pointer px-4 py-2 rounded hover:text-black hover:bg-white   transition-all duration-300 ease-in-out"
+            className="cursor-pointer px-4 py-2 rounded  hover:text-black hover:bg-white   transition-all duration-300 ease-in-out"
           >
             Skills & Experiance
           </Link>
