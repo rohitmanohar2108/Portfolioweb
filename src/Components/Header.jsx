@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="fixed w-full bg-black text-white shadow-md z-10 font-dm-sans">
       <nav className="flex justify-between items-center p-4">
-      <div className="text-4xl font-bold ml-20">Rohit Manohar</div>
+      <div className="md:text-4xl font-bold ml-20">Rohit Manohar</div>
         <div className="space-x-4 text-base">
           <Link
             to="skills"
