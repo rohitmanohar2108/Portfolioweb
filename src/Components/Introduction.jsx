@@ -18,9 +18,6 @@ const Introduction = () => {
     <section id="introduction" className="min-h-screen bg-black font-dm-sans">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-3 py-12">
         <div className="absolute bg-blue-900 bg-opacity-20 rounded-full h-[80%] w-[60%] blur-3xl ml-[10%] mb-20"></div>
-        <div className="absolute bg-blue-900 bg-opacity-20 h-[100%] w-[2%] blur-xl ml-[83%] mb-20 rounded-full rounded-t-none rounded-b-none"></div>
-        <div className="absolute bg-blue-900 bg-opacity-20 h-[100%] w-[2%] blur-2xl ml-[89%] mb-20 rounded-full rounded-t-none rounded-b-none"></div>
-        <div className="absolute bg-blue-900 bg-opacity- h-[100%] w-[2%] blur-3xl ml-[86%] mb-20 rounded-full rounded-t-none rounded-b-none"></div>
 
         {/* Left Side: Text */}
         <div className="w-full md:w-1/2 text-left space-y-4 relative mt-24">
